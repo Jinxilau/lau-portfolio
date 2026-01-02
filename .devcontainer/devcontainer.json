@@ -2,7 +2,7 @@
 // https://github.com/devcontainers/images/tree/main/src/javascript-node
 {
   "name": "JavaScript Portfolio Site with GitHub Codespaces",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "hostRequirements": {
     "cpus": 4
   },
@@ -29,7 +29,12 @@
         "emmet.includeLanguages": {
           "javascript": "javascriptreact"
         },
-        "emmet.triggerExpansionOnTab": true
+        "emmet.triggerExpansionOnTab": true,
+        "files.eol": "\n",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        }
       }
     }
   },
